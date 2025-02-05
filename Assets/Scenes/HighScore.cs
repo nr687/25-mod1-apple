@@ -29,6 +29,7 @@ public class HighScore : MonoBehaviour {
 
             _SCORE = value;
             PlayerPrefs.SetInt("HighScore", value); 
+           
             if ( _UI_TEXT != null){
                 _UI_TEXT.text = "High Score: " + value.ToString( "#0"); 
 
@@ -41,5 +42,17 @@ public class HighScore : MonoBehaviour {
        SCORE = scoreToTry; 
 
     }
+    
+    [Tooltip( "Check this box to reset the Highscore in PlayerPrefs")]
 
+    public bool resetHighScoreNow = false; 
+
+    void OnDrawGizmos () {
+
+        if ( resetHighScoreNow ) {
+            resetHighScoreNow = false; 
+            PlayerPrefs.SetInt( "Highscore", 1000);
+            Debug.LogWarning( "PlayerPrefs Highscore reset to 1,000.");
+        }
+    }
 }

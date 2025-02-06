@@ -686,6 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cb2b1c3a4c5f646ad5e1a63c58b2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetHighScoreNow: 1
 --- !u!1001 &6950030042995960932
 PrefabInstance:
   m_ObjectHideFlags: 0

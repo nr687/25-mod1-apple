@@ -697,7 +697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4878105045087507738, guid: 107d8481155d73447bc60d05a895acf4, type: 3}
       propertyPath: speed
-      value: 15
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -4878105045087507738, guid: 107d8481155d73447bc60d05a895acf4, type: 3}
       propertyPath: applePrefab
